@@ -292,6 +292,20 @@ h1, h2, h3, p, ul { margin: 0; }
 .tool__types span { padding: 4px 8px; border-radius: 999px; background: var(--chip); }
 .tool__link { padding-top: 12px; border-top: 1px solid #ECE6D7; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--link); }
 
+.event {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 28px; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--c-tint), var(--surface) 60%);
+  border: 1px solid var(--line); box-shadow: var(--shadow-card);
+}
+.event__main { flex: 1 1 520px; display: flex; flex-direction: column; gap: 12px; }
+.event__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--c-text); }
+.event__meta a { color: inherit; }
+.event__where { white-space: nowrap; }
+.event__name { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+.event__desc { font-size: 16px; color: var(--muted); max-width: 680px; }
+.event__ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+
 /* Toolbox ------------------------------------------------------------------ */
 .toolbox { background: var(--band); border-top: 1px solid #E2DCCB; }
 .toolbox__inner { padding-top: 104px; padding-bottom: 104px; display: flex; flex-direction: column; gap: 48px; }
@@ -366,6 +380,8 @@ h1, h2, h3, p, ul { margin: 0; }
   .job__card { padding: 22px; }
   .job__company { font-size: 30px; }
   .job__role { font-size: 18px; }
+  .event__sep { display: none; }
+  .event__where { flex-basis: 100%; padding-left: 15px; }
 }
 
 @media (max-width: 480px) {
