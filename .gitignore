@@ -1,0 +1,6 @@
+# Keep personal documents out of the public repo
+*.docx
+*.pdf
+
+# OS files
+.DS_Store
